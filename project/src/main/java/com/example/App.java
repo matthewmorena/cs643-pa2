@@ -24,8 +24,8 @@ public class App {
 
         // Specify the features to use for the model
         VectorAssembler assembler = new VectorAssembler()
-            .setInputCols(new String[]{"feature1", "feature2", "feature3"}) // replace with your features column names
-            .setOutputCol("features");
+            .setInputCols(new String[]{"fixed acidity";"volatile acidity";"citric acid";"residual sugar";"chlorides";"free sulfur dioxide";"total sulfur dioxide";"density";"pH";"sulphates";"alcohol";}) // replace with your features column names
+            .setOutputCol("quality");
 
         // Transform the dataset
         Dataset<Row> output = assembler.transform(trainingData);
