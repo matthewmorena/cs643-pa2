@@ -39,3 +39,5 @@ public class App {
         LinearRegressionModel model = lr.fit(output);
 
         // Print the coefficients and intercept for linear regression
+    }
+}
